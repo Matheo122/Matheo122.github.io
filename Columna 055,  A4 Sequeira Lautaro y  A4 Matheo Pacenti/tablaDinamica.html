@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+      <!--Script para crear los íconos de las redes sociales en el footer-->
+      <script src="https://kit.fontawesome.com/ef5183642c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Formulario con botones -->
+    <h2>Agregar Platos</h2>
+    <form id="crearForm">
+    <label for="plato">Plato</label>
+    <input type="text" id="plato" required>
+
+    <label for="precio">Precio del plato</label>
+    <input type="number" id="precio" required>
+
+    <!-- Agrego los botones con sus funciones -->
+ <button type="button" id="agregarPlato">Agregar plato</button>
+ <button type="button" id="eliminarPlato">Eliminar plato</button>
+ <button type="button" id="vaciarPlato">Vaciar platos</button>
+ <button type="button" id="agregarDos">Agregar 2 Platos</button>
+ <button type="button" id="editarPlato">editar platos</button>
+ </form>
+
+ <!-- tabla de comidas -->
+<table id = "tablaPlatos"> 
+    <thead>
+        <tr>
+            <th>plato</th>
+            <th>precio</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyPlatos" ></tbody>
+</table>
+
+
+<script src="js/tabladinamica.js"></script>
+</body>
+</html>

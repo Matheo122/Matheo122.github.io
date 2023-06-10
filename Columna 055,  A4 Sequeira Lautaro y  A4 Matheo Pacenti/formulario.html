@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!--Script para crear los íconos de las redes sociales en el footer-->
+    <script src="https://kit.fontawesome.com/ef5183642c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navegador dentro de la página-->
+    <header>
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="index.html">Regiones</a>
+                </li>
+                <li>
+                    <a href="#contacto-footer">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contenedor-del-formulario">
+
+        <img id="pedidos_ya" src="img/pedidosya.jpg" alt="PedidosYa">
+
+        <!-- formulario -->
+        <div class="formulario">
+            <h1 id="compra">Realiza tu compra</h1>
+            <form id="form">
+                <input type="text" name="nombre-y-apellido" placeholder="Nombre y Apellido" name="nombre-y-apellido">
+                <input type="email" name="e-mail" placeholder="e-mail" id="e-mail">
+                <input type="number" name="telefono" placeholder="Numero de telefono" id="telefono">
+                <input type="text" name="domicilio" placeholder="Domicilio" id="Domicilio">
+                <input type="text" name="especificacion-domicilio" placeholder="Especificacion del domicilio" required
+                    maxlength="50" id="especificacion-domicilio">
+                <input type="password" name="efectivo-transferencia" placeholder="Numero de tarjeta"
+                    id="efectivo-transferencia">
+                <!-- boton de comprar -->
+                <button type="submit">Comprar</button>
+            </form>
+            <!-- captcha del formulario -->
+            <div class="captcha_del_formulario">
+                <p>Por favor, ingrese el resultado de la siguiente operación:</p>
+                <span id="v1"></span> + <span id="v2"></span>
+                <input type="number" placeholder="Ingresar el resultado" id="IngresarResultado" />
+                <span id="resultado"> </span>
+            </div>
+            <p id="terminar_compra"></p>
+        </div>
+
+
+        <img id="rappi" src="img/rappi.png" alt="">
+
+    </div>
+
+    <!-- tabla -->
+
+    <!-- Formulario con botones -->
+    <h2>Agregar Platos</h2>
+    <form id="crearForm">
+        <label for="plato">Plato</label>
+        <input type="text" id="plato" required>
+
+        <label for="precio">Precio del plato</label>
+        <input type="number" id="precio" required>
+
+        <!-- Agrego los botones con sus funciones -->
+        <button type="button" id="agregarPlato">Agregar plato</button>
+        <button type="button" id="eliminarPlato">Eliminar plato</button>
+        <button type="button" id="vaciarPlato">Vaciar platos</button>
+        <button type="button" id="agregarTres">Agregar tres</button>
+        <!-- <div>
+            <button type="button" id="agregarMas">Agregar +</button>
+            <input type="number" id="agregarMasPlatosInput">
+        </div> -->
+    </form>
+
+    <!-- tabla de comidas -->
+    <table id="tablaPlatos">
+        <thead>
+            <tr>
+                <th>plato</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyPlatos"></tbody>
+    </table>
+
+
+    <!--Pie de Página-->
+    <footer class="pie-pagina" id="contacto-footer">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Fechas de entrega y alumnos.</h2>
+                <p>12 de Mayo de 2023</p>
+                <p>Pacenti Matheo y Sequeira Lautaro</p>
+            </div>
+            <div class="box">
+                <h2>Contáctanos</h2>
+                <p>+54 9 2284 63-0691</p>
+                <p>deliciasdelcampeon@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2>siguenos</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2023 <b>Delicias del Campeón </b> <img src="./img/logo.png" alt="logo">- Todos los derechos
+                reservados</small>
+        </div>
+    </footer>
+    <script src="js/javascrip.js"></script>
+    <script src="js/tabladinamica.js"></script>
+</body>
+
+</html>

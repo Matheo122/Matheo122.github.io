@@ -1,0 +1,583 @@
+/* pagina principal */
+/*importaciones de letras*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* imágen de presentación*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*barra de navegación*/
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 10px 20px;
+  background-color: #0a141d;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f9f3f4;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+header ul li a:hover {
+  color: #2196f3;
+}
+
+/*primer section para la imágen de presentación*/
+.full {
+  width: 100%;
+  height: 100%;
+  background: url('../img/fondo.avif') no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+
+.full-inner {
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/*contenido dentro de la imágen de presentación*/
+.content {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.titulo_principal {
+  height: 277px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 500%;
+  color: #f9f3f4;
+  text-shadow: 0 0 300px black;
+
+
+}
+
+.content a {
+  border-radius: 9px;
+  text-decoration: none;
+  color: #f9f3f4;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: bold;
+  border: 3px solid;
+  padding: 7px 13px;
+}
+
+.content a:hover {
+  color: #2196f3;
+}
+
+.content a {
+  text-transform: uppercase;
+}
+
+.content h2 {
+  text-transform: capitalize;
+  margin-top: 100px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 200%;
+  color: #f9f3f4;
+  text-shadow: 0 0 300px black;
+}
+
+.content p {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 300%;
+  color: #f9f3f4;
+  text-shadow: 0 0 300px black;
+
+}
+
+/*sección que exlica de que trata Delicias del Campeón*/
+.informacion {
+  font-size: 150%;
+  line-height: 150%;
+  margin: 1%;
+  font-family: sans-serif;
+  padding-left: 25px;
+}
+
+.nosotros {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 300%;
+}
+
+.conocenos {
+  margin-top: 0px;
+  display: flex;
+  padding: 25px;
+}
+
+.conocenos img {
+  width: 7000px;
+  height: 700px;
+}
+
+
+
+.mapa {
+  margin-left: 30px;
+}
+
+.titulo-sucursal {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.tabla-sucursales table {
+  margin: 10px auto;
+}
+
+td,
+th {
+  padding: 10px;
+  border: solid #0a141d;
+  text-align: center;
+}
+
+.logo-tabla {
+  width: 50px;
+  height: 50px;
+}
+
+.nombre_de_region {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Century Gothic', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*selección de región de Argetina para poder elegir el plato que desea comer*/
+.seleccionador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.segundotitulo {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 300%;
+  text-align: center;
+}
+
+.parrafoempezar {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.imagenes_de_regiones {
+  display: flex;
+  width: 600px;
+  height: 430px;
+  justify-content: space-between;
+}
+
+.imagenes_de_regiones img {
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 63px;
+}
+
+.imagenes_de_regiones img:hover {
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*empieza la región Pampeana*/
+
+.wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 100px;
+  height: 10vh;
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.contenedor {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+
+}
+
+/* menu1 */
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 106vh;
+  width: 42vh;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 8px;
+  background-image: url("/img/fondomenu.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+  gap: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+.texto {
+  margin-top: -3vh;
+}
+
+#foto {
+
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+/* menu2 */
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 106vh;
+  width: 42vh;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 8px;
+  background-image: url("/img/fondomenu.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+
+
+hr {
+  margin-top: -4vh;
+  background-color: yellow;
+  height: 2px;
+  width: 160px;
+  border: none;
+}
+
+.texto2 {
+  margin-top: -3vh;
+}
+
+#foto2 {
+  margin-top: -5vh;
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+
+/* menu3 */
+.menu3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 106vh;
+  width: 42vh;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 8px;
+  background-image: url("/img/fondomenu.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+
+.texto3 {
+  margin-top: -5h;
+}
+
+
+
+#foto3 {
+
+  height: 200px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+/* caja de carrito para compra */
+.precio_y_carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.precio-menu {
+  margin-top: -6vh;
+  height: 15px;
+  flex: center;
+  font-weight: bold;
+  color: rgb(219, 191, 33);
+
+}
+
+/* carrito */
+i {
+  color: rgb(219, 191, 33);
+}
+
+i:hover {
+  color: #2196f3;
+}
+
+/* Formulario */
+
+.contenedor-del-formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 700px;
+  margin: 0 auto;
+  flex: column;
+  gap: 125px;
+}
+
+#pedidos_ya {
+  margin-top: 300px;
+  width: 44vh;
+  height: 23vh;
+  border-radius: 100px;
+
+}
+
+
+
+#form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input {
+  width: 255px;
+  height: 35px;
+}
+
+#compra {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.formulario {
+  margin-top: 90px;
+  color: aliceblue;
+  width: 52vh;
+  height: 85vh;
+  background-image: url("/img/fondomenu.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+}
+
+#form {
+  margin-top: 30px;
+}
+
+.captcha_del_formulario {
+  margin-top: 30px;
+  width: 50vh;
+}
+
+
+#rappi {
+  margin-top: 300px;
+  width: 44vh;
+  height: 23vh;
+  border-radius: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*empieza el pie de página*/
+
+.pie-pagina {
+  margin-top: 200px;
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  text-align: center;
+
+
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  text-transform: uppercase;
+  color: #f9f3f4;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #f9f3f4;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #2196f3;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #f9f3f4;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+.pie-pagina img {
+  width: 20px;
+  height: 20px;
+}
+
+/* termina el pie de página */
+
+/* solo se evaluara la Region Pampeana, las regiones faltantes las agregamos solamente por estetica y para que tenga sentido la pagina */
+.titulo_general {
+  margin-top: 45vh;
+  /* es para que no me quede espacio en blanco abajo del footer */
+  height: calc(100vh - 100px - 300px);
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+}
+/* 
+@media only screen and (max-width: 832px) {
+  .contenedor {
+    flex-direction: row;
+  }
+
+} */
+
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  header {
+    width: auto;
+    padding: 1em 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .conocenos {
+    flex-direction: column;
+  }
+
+  .conocenos img {
+    width: auto;
+    height: auto;
+  }
+  .conocenos p {
+    font-size: .9em;
+    text-align: justify;
+  }
+}
